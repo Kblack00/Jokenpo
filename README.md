@@ -19,7 +19,7 @@
 
 ## jokenpo
 
-Pedra-Papel-Tesoura
+Pedra-Papel-Tesoura!
 
 ### Starting the generated app
 
