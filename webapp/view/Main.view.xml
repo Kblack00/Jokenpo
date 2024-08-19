@@ -2,6 +2,28 @@
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
-        <content />
+        <content>
+            <VBox alignItems="Center">
+                <HBox >
+                    <VBox >
+                        <Label text="Jogador" design="Bold" class="sapUiTinyMargin"/>
+                        <Input width="50px" editable= "false" value="{placarModel>/jogador}" class="sapUiTinyMargin"></Input>
+                    </VBox>
+
+                    <VBox >
+                        <Label text="Computador" design="Bold" class="sapUiTinyMargin"/>
+                        <Input width="50px" editable="false" value="{placarModel>/computador}" class="sapUiTinyMargin"></Input>
+                    </VBox>
+                </HBox>
+
+                <Text text="Quem ganhar 3x primeiro, vence a partida!"></Text>
+
+                <HBox >
+                    <Button text="Pedra" width="100px" class="sapUiResponsiveMargin" press="jogarPedra"/>
+                    <Button text="Tesoura" width="100px" class="sapUiResponsiveMargin" press="jogarTesoura"/>
+                    <Button text="Papel" width="100px" class="sapUiResponsiveMargin" press="jogarPapel"/>
+                </HBox>
+            </VBox>
+        </content>
     </Page>
 </mvc:View>
